@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    body {
+        @apply text-[#f9f9f9f9] bg-[#1A021D] h-screen;
+    }
+}
 @layer components{
     .iconText{
         @apply w-6 h-6;

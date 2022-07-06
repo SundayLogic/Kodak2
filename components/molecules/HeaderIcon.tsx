@@ -52,11 +52,11 @@ const HeaderIcon = ({ title, iconName, size }: IconText) => {
     return finalCode;
   };
   return (
-    <div className="flex flex-col items-center space-y-2 cursor-pointer py-3 group w-[100px]">
+    <div className="flex flex-col items-center py-3 cursor-pointer space-y-2 group md:w-[80px]">
       <div className="opacity-90 group-hover:opacity-100 ease-out duration-150 transition-all">
         {iconCreator(iconName)}
       </div>
-      <h1 className="uppercase z-1 opacity-90 group-hover:opacity-100 group-hover:tracking-wider transition-all">
+      <h1 className="text-sm uppercase sm:text-md md:text-lg z-1 opacity-90 group-hover:opacity-100 sm:group-hover:tracking-wider transition-all">
         {title}
       </h1>
     </div>
